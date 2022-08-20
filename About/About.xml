@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Ceramics Crafting</name>
+	<author>N7Huntsman</author>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<packageId>n7huntsman.ceramics.craft</packageId>
+	<description>Adds a variety of ceramics and other materials from across various tech level to the game. Modified for Vanilla Expanded Framework.
+
+this is a port of N7Huntsmans ceramics mod only crafting.
+
+i just modified some parts that are already in 1.3 / Ideology
+
+Acknowledgements
+Thanks to N7Huntsman for the original mod.
+And Thanks to Dardakan for his Brickfloor Fix.
+Also Thanks to Eagle0600 for their Expandable Fermenting and Processing mod, the framework upon which the original kilns and drying rack are built upon.
+A special thanks for dninemfive, ChJeez, and Jamacian Castle for their help as N7Huntsman updated his mod to 1.1.
+Thanks go out to Wiri, for implementing a job tracking filter to major performance improvements.
+Thanks to Owlchemist for his VEF mod versions, what inspired me.
+And Last but not least Thanks to Oskar Potocki and all of the Vanilla Expanded Framework Team for their great Work.</description>
+
+	<loadAfter>
+		<li>jamaicancastle.rf.fertilefields</li>
+		<li>mlie.concrete</li>
+    </loadAfter>
+</ModMetaData>
