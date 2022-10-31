@@ -11,15 +11,15 @@
 						<value>
 							<WorldObjectDef ParentName="OutpostBase">
 								<defName>Outpost_DigPit</defName>
-								<label>Dig side outpost</label>
+								<label>dig side outpost</label>
 								<description>Places a temporary, autonomously-led camp that specializes in Digging. Once an ample amount is collected, a delivery will be made at the outskirts of a faction's primary colony.</description>
 								<expandingIconTexture>WorldObjects/OutpostDig</expandingIconTexture>
 								<worldObjectClass>Outposts.Outpost_ChooseResult</worldObjectClass>
 								<modExtensions>
 									<li Class="KCSG.CustomGenOption">
-										<useStructureLayout>True</useStructureLayout>
+										<preventBridgeable>true</preventBridgeable>
 										<chooseFromlayouts>
-											<li>Outpost_Struct_Mining</li>
+											<li>Outpost_Struct_Digging</li>
 										</chooseFromlayouts>
 										<fullClear>true</fullClear>
 									</li>
@@ -30,25 +30,25 @@
 										<ChooseLabel>Digging {0}</ChooseLabel>
 										<ChooseDesc>Click to change digging target.</ChooseDesc>
 										<ResultOptions>
-										<li>
-											<BaseAmount>750</BaseAmount>
-											<Thing>N7_RawClay</Thing>
-											<MinSkills>
-												<Mining>5</Mining>
-											</MinSkills>
-										</li>
-										<li>
-											<BaseAmount>750</BaseAmount>
-											<Thing>N7_Sand</Thing>
-											<MinSkills>
-												<Mining>5</Mining>
-											</MinSkills>
-										</li>
-									</ResultOptions>
-								</li>
-							</modExtensions>
-						</WorldObjectDef>
-							<!--<KCSG.StructureLayoutDef>
+											<li>
+												<BaseAmount>750</BaseAmount>
+												<Thing>N7_RawClay</Thing>
+												<MinSkills>
+													<Mining>5</Mining>
+												</MinSkills>
+											</li>
+											<li>
+												<BaseAmount>750</BaseAmount>
+												<Thing>N7_Sand</Thing>
+												<MinSkills>
+													<Mining>5</Mining>
+												</MinSkills>
+											</li>
+										</ResultOptions>
+									</li>
+								</modExtensions>
+							</WorldObjectDef>
+							<KCSG.StructureLayoutDef>
 								<defName>Outpost_Struct_Digging</defName>
 								<layouts>
 									<li>
@@ -118,7 +118,7 @@
 										<li>.,.,Barricade_N7_DriedMudbrick,.,.,.,.,.,.,.,.,Wall_N7_DriedMudbrick,Wall_N7_DriedMudbrick,.,Shelf_WoodLog_South,.,Wall_N7_DriedMudbrick,Wall_N7_DriedMudbrick,.,.,.</li>
 										<li>.,.,Barricade_N7_DriedMudbrick,Barricade_N7_DriedMudbrick,Barricade_N7_DriedMudbrick,Barricade_N7_DriedMudbrick,.,.,.,.,.,.,Wall_N7_DriedMudbrick,Wall_N7_DriedMudbrick,Wall_N7_DriedMudbrick,Wall_N7_DriedMudbrick,Wall_N7_DriedMudbrick,.,.,Barricade_N7_DriedMudbrick,.</li>
 										<li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Barricade_N7_DriedMudbrick,.</li>
-										<li>.,Plant_Grass,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Barricade_N7_DriedMudbrick,Barricade_N7_DriedMudbrick,Barricade_N7_DriedMudbrick,.</li>
+										<li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Barricade_N7_DriedMudbrick,Barricade_N7_DriedMudbrick,Barricade_N7_DriedMudbrick,.</li>
 									</li>
 								</layouts>
 								<roofGrid>
@@ -144,9 +144,9 @@
 									<li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
 									<li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
 								</roofGrid>
-							</KCSG.StructureLayoutDef>-->
-					</value>
-				</li>
+							</KCSG.StructureLayoutDef>
+						</value>
+					</li>
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Fertile Fields [1.1]</li>
